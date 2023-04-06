@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    padding: 34px;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    font-size: 40px;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+
+input,
+textarea {
+
+    border: 2px solid black;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    width: 80%;
+    margin: 11px 0px;
+    padding: 7px;
+    background-color: rgb(255, 255, 255, 0.8);
+    opacity: 0.8;
+}
+
+form {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(0, 3, 158);
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.bg {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.submitMsg {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(12, 221, 12);
+}
+
+.sign {
+    color: rgb(0, 0, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    font-family: 'Sriracha', cursive;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    align-content: center;
+    padding-top: 34px;
+    padding-left: 500px;
+    margin: auto;
+
+}
+
+.para {
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    color: rgb(117, 0, 0);
+    font: bolder;
+    font-size: x-large;
+    align-content: center;
+    max-width: 90%;
+    padding: 34px;
+    margin: auto;
+
+
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 8%;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 1%;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    bottom: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -90%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
