@@ -13,3 +13,27 @@ function generateQRCode(value) {
         })
     })
 }
+
+
+function readQRCode(files) {
+    const resultContainer = document.querySelector('#result');
+
+    if (files && files[0]) {
+      const apiUrl = 'http://api.qrserver.com/v1/read-qr-code/';
+      const formData = new FormData();
+      formData.append('file', files[0]);
+
+      // Send the image file to the QR code reader API using a POST request
+      fetch(apiUrl, { method: 'POST', body: formData })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data[0].symbol[0].error) {
+            console.error(data[0].symbol[0].error);
+          } else {
+            // Display the QR code content in the result container
+            resultContainer.innerText = data[0].symbol[0].data;
+          }
+        })
+        .catch((error) => console.error(error));
+    }
+  }
