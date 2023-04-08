@@ -24,7 +24,7 @@
         <label>Text: </label>
         <input name="qrcode" type="text" onchange="generateQRCode(this.value)" />
       </div>
-      <img id="qrcode" />
+      <img class="result" id="qrcode" />
 
       <form action="index.php" method="post">
         <input type="text" name="name" id="name" placeholder="Enter your name">
@@ -44,9 +44,12 @@
       <h2>QR Reader</h2>
       <form>
         <input type="file" accept="image/*" onchange="readQRCode(this.files)">
+        <div class="result" id="result"><h1></h1></div>
+
+        <button class="btn">Submit</button>
+
       </form>
 
-      <div id="result"></div>
 
 
     </div>
