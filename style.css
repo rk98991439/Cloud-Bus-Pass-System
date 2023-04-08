@@ -94,7 +94,7 @@ form {
     text-align: center;
     font-size: 40px;
     align-content: center;
-    padding-top: 34px;
+    padding-top: 30px;
     padding-left: 500px;
     margin: auto;
 
@@ -120,7 +120,7 @@ form {
     width: 50%;
     position: fixed;
     z-index: 1;
-    top: 10%;
+    top: 15%;
     overflow-x: hidden;
     padding-top: 20px;
   }

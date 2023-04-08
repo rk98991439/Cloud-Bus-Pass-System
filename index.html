@@ -19,6 +19,13 @@
     <div class="container">
       <p class="para">Enter your details and submit this form to confirm your participation in the Bus Pass </p>
 
+      <h2>QR Code Generator Tutorial</h2>
+      <div>
+          <label>Text: </label>
+          <input name="qrcode" type="text" onchange="generateQRCode(this.value)"/>
+      </div>
+      <img id="qrcode"/>
+
       <form action="index.php" method="post">
         <input type="text" name="name" id="name" placeholder="Enter your name">
         <input type="text" name="age" id="age" placeholder="Enter your Age">
@@ -37,7 +44,7 @@
 
       <form action="/action_page.php">
         <input type="file" id="myFile" name="filename">
-        <input type="submit">
+        <input type="Submit">
         <a class="sign" href="file:///home/rohit/Documents/harry/index.html">
           <h2>Login</h2>
         </a>
