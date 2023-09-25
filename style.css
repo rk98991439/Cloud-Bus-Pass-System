@@ -1,9 +1,18 @@
+/* Reset some default styles */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
 
+/* Global styles */
+body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    opacity: 0.8;
 }
 
 .container {
@@ -12,35 +21,40 @@
     margin: auto;
 }
 
+/* Header styles */
 .container h1 {
     text-align: center;
     font-family: 'Sriracha', cursive;
     font-size: 40px;
+    color: red; /* Added red color for consistency with your previous code */
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
+/* Vertical line separator styles */
 .vl {
     border-left: 6px solid green;
     height: 500px;
     position: absolute;
     left: 50%;
-    margin-left: -3px;
+    transform: translateX(-50%);
     top: 0;
-  }
+}
 
+/* Form input styles */
 input,
 textarea {
-
     border: 2px solid black;
     border-radius: 6px;
     outline: none;
     font-size: 16px;
     width: 80%;
-    margin: 11px 0px;
+    margin: 11px 0;
     padding: 7px;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     opacity: 0.8;
 }
 
+/* Form styles */
 form {
     font-size: x-large;
     display: flex;
@@ -49,6 +63,7 @@ form {
     flex-direction: column;
 }
 
+/* Submit button styles */
 .btn {
     display: flex;
     align-items: center;
@@ -62,59 +77,54 @@ form {
     cursor: pointer;
 }
 
+/* Background image styles */
 .bg {
     max-width: 100%;
     height: auto;
-    background-size: cover;
     width: 100%;
     position: absolute;
     z-index: -1;
     opacity: 0.8;
 }
 
+/* Submission message styles */
 .submitMsg {
     font-size: larger;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    text-align: center;
     color: rgb(12, 221, 12);
+    margin-top: 20px; /* Added margin for spacing */
 }
 
+/* Signup link styles */
 .sign {
     color: rgb(0, 0, 99);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px; /* Added margin for spacing */
 }
 
+/* Header styles */
 .head {
     font-family: 'Sriracha', cursive;
-    display: flex;
     text-align: center;
     font-size: 40px;
-    align-content: center;
     padding-top: 30px;
-    padding-left: 500px;
-    margin: auto;
-
 }
 
+/* Paragraph styles */
 .para {
     text-align: center;
     font-family: 'Sriracha', cursive;
     color: rgb(117, 0, 0);
-    font: bolder;
+    font-weight: bold; /* Use font-weight instead of font to specify bold */
     font-size: x-large;
-    align-content: center;
     max-width: 90%;
     padding: 34px;
     margin: auto;
-
-
 }
 
-/* Split the screen in half */
+/* Split screen styles */
 .split {
     height: 100%;
     width: 50%;
@@ -123,37 +133,38 @@ form {
     top: 15%;
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  .left {
+}
+
+/* Left split styles */
+.left {
     left: 8%;
-  }
-  
-  /* Control the right side */
-  .right {
+}
+
+/* Right split styles */
+.right {
     right: 1%;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
+}
+
+/* Centered content styles */
+.centered {
     position: absolute;
     bottom: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-10%, -90%);
     text-align: center;
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered img {
+}
+
+/* Image inside centered container styles */
+.centered img {
     width: 150px;
     border-radius: 50%;
-  }
+}
 
-
-  .result {
+/* Result container styles */
+.result {
     align-self: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-  }
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px; /* Added padding for spacing */
+}
