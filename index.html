@@ -3,59 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CU Bus</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
+  <title>Chandigarh University Bus Pass Registration</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
-  <style>
-    /* Add any additional CSS styles here */
-  </style>
 </head>
 <body>
-  <img class="bg" src="bg.jpg">
-  <header class="head">Chandigarh University Bus Pass Registration Form</header>
-
-  <div class="split left">
-    <div class="container">
-      <p class="para">Enter your details and submit this form to confirm your participation in the Bus Pass</p>
-
+  <header class="header">
+    <h1>Chandigarh University Bus Pass Registration</h1>
+  </header>
+  <main>
+    <section class="split left">
       <h2>QR Code Generator</h2>
       <div>
-        <label for="qrcode">Text: </label>
-        <input name="qrcode" type="text" id="qrcodeInput" onchange="generateQRCode(this.value)" />
+        <label for="qrcodeInput">Text: </label>
+        <input type="text" name="qrcode" id="qrcodeInput" onchange="generateQRCode(this.value)">
       </div>
-      <img class="result" id="qrcode" alt="Generated QR Code" />
-
-      <form action="index.php" method="post">
-        <input type="text" name="name" id="name" placeholder="Enter your name">
-        <input type="text" name="age" id="age" placeholder="Enter your Age">
-        <input type="text" name="gender" id="gender" placeholder="Enter your gender">
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
-        <button class="btn" type="submit">Submit</button>
+      <img class="result" id="qrcode" alt="Generated QR Code">
+      <form action="index.php" method="post" aria-label="Bus Pass Registration Form">
+        <button class="btn btn-primary" type="submit">Submit</button>
       </form>
-    </div>
-  </div>
-
-  <div class="split right">
-    <div class="centered">
-      <p class="para">Submit your ID card</p>
-
-      <h2>QR Reader</h2>
+    </section>
+    <section class="split right">
+      <h2>Submit your ID Card</h2>
       <form>
         <input type="file" accept="image/*" onchange="readQRCode(this.files)">
         <div class="result" id="result"><h1></h1></div>
-
-        <button class="btn" type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
       </form>
-    </div>
-  </div>
-
-  <div>
-    <a class="sign" href="login.html">
-      <h2>Signup</h2>
-    </a>
-    <p class="submitMsg">Thanks for submitting your form. We are happy to see you joining us for Chandigarh University Bus Pass</p>
-  </div>
+    </section>
+  </main>
+  <footer>
+    <a class="sign" href="login.html">Signup</a>
+    <p class="submitMsg">Thanks for submitting your form....</p>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
